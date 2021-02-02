@@ -1,0 +1,81 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/loginByPwd",
+			"style": {
+				"navigationBarTitleText": "登录"
+					 }
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "订单中心"
+					 }
+		},
+		{
+			"path":"pages/alldata/alldata",
+			"style":{
+				"navigationBarTitleText": "数据统计"
+			}
+		},
+		{
+			"path":"pages/profile/profile",
+			"style":{
+				"navigationBarTitleText": "我的"
+			}
+		}	,
+		{
+			"path":"pages/register/index",
+			"style":{
+				"navigationBarTitleText": "申请入驻"
+			}
+			},
+			{
+				"path":"pages/login/loginByNoPwd",
+				"style":{
+					"navigationBarTitleText": "免密登录"
+				}
+				},
+				{
+					"path":"pages/register/first_register",
+					"style":{
+						"navigationBarTitleText":"首次申请"
+					}
+				},
+				{
+					"path":"pages/register/busness_info",
+					"style":{
+						"navigationBarTitleText":"商家信息"
+					}
+				}
+				
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "人人购",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "gray",
+	    "selectedColor": "black",
+	    "borderStyle": "white",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/order/order",
+	        "iconPath": "static/images/order/order.png",
+	        "selectedIconPath": "static/images/order/order-active.png",
+	        "text": "订单中心"
+	    }, {
+	        "pagePath": "pages/alldata/alldata",
+	        "iconPath": "static/images/alldata/alldata.png",
+	        "selectedIconPath": "static/images/alldata/alldata-active.png",
+	        "text": "数据统计"
+	    }, {
+			    "pagePath": "pages/profile/profile",
+			    "iconPath": "static/images/profile/profile.png",
+			    "selectedIconPath": "static/images/profile/profile-active.png",
+			    "text": "我的"
+			}]
+	}
+}
