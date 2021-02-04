@@ -186,20 +186,18 @@
 
 <style lang="scss">
 	.content{
-		width: 90%;
-		margin: 0 auto;
+		@include pri-content();
 		.steps{
 			padding: 40rpx 0;
 			background-color: $bg-color;			
 		}
 		.input-data{
 			.flex{
-				display: flex;
+				@include primary-flex($justify-content:flex-start);
 				padding-top: 60rpx;
 				label{
 					margin-right: 42rpx;
-					font-size:30rpx;
-					padding-top: 8rpx;
+					font-size:$label-fontsize;
 				}
 				text{
 					color: red;
@@ -214,7 +212,6 @@
 				}
 				.pclass{
 					font-size:$placeholder-fontsize;
-					color: gray;
 				}
 			}
 		}

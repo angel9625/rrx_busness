@@ -1,13 +1,20 @@
 $main-color:rgb(252,206,120); //主色-橙色
 $bg-color:rgb(242,242,242);//背景色-浅灰
-$placeholder-fontsize{
-	font-size: 32rpx;
+$placeholder-fontsize:30rpx;// placeholder字体大小
+$label-fontsize:35rpx;//label字体大小
+// 必填符号为红色
+.red{
+	color: red;
 }
-
 // 常用flex布局方式
 @mixin primary-flex($flex-direction:row,$justify-content:center,$align-items:center) {
 	display: flex;
 	flex-direction:$flex-direction;
 	justify-content:$justify-content;
 	align-items:$align-items;
+}
+// 常用内容区布局
+@mixin pri-content($width:90%,$margin:0 auto) {
+	width:$width;
+	margin:$margin;
 }

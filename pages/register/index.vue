@@ -15,6 +15,7 @@
 		<uni-popup ref="popup" type="dialog">
 				<uni-popup-dialog mode="input" title="申请查询记录" placeholder-class="pclass" placeholder="输入账号名/手机号"></uni-popup-dialog>
 			</uni-popup>
+			</view>
 		</view>			
 </template>
 
@@ -35,13 +36,13 @@
 		data(){
 			return{
 				first:first,
-				search:search
+				search:search,
 			}
 		},
 		methods:{
 			pop_open(){
 				this.$refs.popup.open()
-			}
+			},
 		}
 	}
 </script>

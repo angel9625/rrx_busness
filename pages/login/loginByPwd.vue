@@ -7,11 +7,11 @@
 			<view class="login-data">
 				<view class="login-input">
 					<image :src="phone"></image>
-					<input type="text" v-model="username" placeholder="账号/手机号" @blur="checkUsername"/>
+					<input type="text" v-model="username" placeholder="账号/手机号" placeholder-class="pclass" @blur="checkUsername"/>
 				</view>
 				<view class="login-input">
 					<image :src="pwd"></image>
-					<input password="true" v-model="password" placeholder="请输入密码" @blur="checkpassword"/>
+					<input password="true" v-model="password" placeholder="请输入密码" placeholder-class="pclass" @blur="checkpassword"/>
 				</view>
 				<view class="login-button">
 					<button class="button-login"  @click="toLogin">登录</button>
@@ -111,6 +111,9 @@
 		input{
 			font-size: 35rpx;	
 			margin: 30rpx 0;
+		}
+		.pclass{
+			font-size:$placeholder-fontsize;
 		}
 		image{
 			width: 30rpx;
